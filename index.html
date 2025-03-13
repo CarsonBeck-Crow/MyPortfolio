@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carson's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the portfolio of Carson Beck.">
+    <meta name="author" content="Carson Beck">
+    <meta name="keywords" content="Carson, Carson Beck, Portfolio, Writer, Novelist, Aspiring Web Developer, Portfolio Example, Portfolio Examples">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!--Here's the top of the page, heading, and nav bar.-->
+<section id="banner" class="banner">
+    <header>
+        <div class="page-title">
+            <h1>Carson Beck</h1>
+            <h1>Writer. Socialist. Forever DM.</h1>
+        </div>
+        <div id="menu-nav" class="menu-nav">
+            <a href="index.html">Home</a>
+            <a href="#writing">Writing</a>
+            <a href="#photography">Photography</a>
+            <a href="#web-dev">Web Development</a>
+            <a href="#resume">Resume</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+</section>
+<main>
+
+    <!--Here's the front page landing area.-->
+    <section id="landing" class="landing">
+        <div class="welcome-message" id="welcome-message">
+            <h2>The Products of my Labor...</h2>
+        </div>
+    </section>
+
+    <!--Here's where we've got the book.-->
+    <section id="writing" class="writing">
+        <div class="tcoa" id="tcoa">
+            <h2>The Cost of Adventure</h2>
+            <p>The novel I'm currently working on.</p>
+            <button id="tcoa-button" class="tcoa-button">Learn More</button>
+        </div>
+    </section>
+
+    <!--Photography stuff goes here.-->
+    <section id="photography" class="photography">
+        <div class="my-pics" id="my-pics">
+            <h2>My Photography</h2>
+        </div>
+    </section>
+
+    <!--Here's my webdev stuff.-->
+    <section id="web-dev" class="web-dev">
+        <div class="tcc" id="tcc">
+            <h2>The Common Crow</h2>
+            <p>A blog I created and built with the aim to provide a glimpse of the world through the lens of socialism,</p>
+            <p>with the hopes to appeal to untapped demographics.</p>
+            <button id="tcc-button" class="tcc-button">Join the Murder</button>
+        </div>
+    </section>
+
+    <!--Here's my resume.-->
+    <section id="resume" class="resume">
+        <div class="resume-pdf" id="resume-pdf">
+            <h2>My Resume</h2>
+            <embed class="pdf" src="./assets/resume/resume.pdf#toolbar=0&#navpanes=0&#scrollbar=0" type="application/pdf">
+        </div>
+    </section>
+
+    <!--Here's my about section.-->
+    <section id="about" class="about">
+        <div class="about-me" id="about-me">
+            <h2>"Who am I? You sure you wanna know?"</h2>
+            <h4>-Spider-Man, 2002</h4>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.</p>
+        </div>
+    </section>
+</main>
+
+<!--Footer contains the contact form.-->
+<footer>
+    <section id="contact">
+        <div class="container" id="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form" action="">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email.." required>
+
+                <label for="message">Subject</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="button" id="submit" value="Submit" onclick="submitForm()">
+
+            </form>
+        </div>
+    </section>
+</footer>
+
+<!--Scripts go here.-->
+
+</body>
+</html>

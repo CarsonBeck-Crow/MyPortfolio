@@ -1,0 +1,223 @@
+/*Styling for the full doc*/
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Styling for the title*/
+.page-title h1 {
+    font-size: 32px;
+    line-height: 12px;
+    padding-left: 14px;
+}
+
+/*Sets title to be inline with nav.*/
+.page-title {
+    display: inline-block;
+    position: static;
+}
+
+/*Sets nav to be in correct position.*/
+#menu-nav {
+    display: inline-flex;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    float: right;
+}
+
+/*Styling the nav.*/
+#menu-nav a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 32px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 26px;
+}
+
+/*Adds hover effect to the nav.*/
+#menu-nav a:hover {
+    color: mediumpurple;
+}
+
+/*Positions and styles the landing*/
+#landing {
+    text-align: center;
+    vertical-align: middle;
+    height: 550px;
+    font-size: 48px;
+    padding-top: 12%;
+    background-image: url("../assets/pictures/landingbg.PNG");
+    background-repeat: no-repeat;
+    background-position: center 55%;
+    background-size: cover;
+}
+
+/*Positions the writing.*/
+#writing {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12%;
+}
+
+/*Styles Book title*/
+.tcoa h2 {
+    font-size: 48px;
+}
+
+/*Styles Book description.*/
+.tcoa p {
+    font-size: 22px;
+}
+
+/*Styles link to the book*/
+.tcoa button {
+    height: 44px;
+    width: auto;
+    font-size: 22px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 16px;
+}
+
+/*Adds hover to book button*/
+.tcoa button:hover {
+    color: white;
+    background-color: mediumpurple;
+}
+
+/*Positions photography section.*/
+#photography {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12%;
+}
+
+/*Styles Photography title.*/
+#photography h2 {
+    font-size: 48px;
+}
+
+/*Positions WebDev Section.*/
+#web-dev {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12%;
+}
+
+/*Style WebDev title*/
+#web-dev h2 {
+    font-size: 48px;
+}
+
+/*WebDev Description*/
+#web-dev p {
+    font-size: 22px;
+}
+
+/*WebDev Link style*/
+#web-dev button {
+    height: 44px;
+    width: auto;
+    font-size: 22px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 16px;
+}
+
+/*Button hover effect.*/
+#web-dev button:hover {
+    color: white;
+    background-color: mediumpurple;
+}
+
+/*Position resume section*/
+.resume-pdf {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12%;
+}
+
+/*Resume title style*/
+.resume-pdf h2 {
+    font-size: 48px;
+}
+
+/*Size of the Resume to make it fit on the page properly.*/
+.resume-pdf embed {
+    width: 775px;
+    height: 1000px;
+}
+
+/*About me section position.*/
+.about-me {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12%;
+}
+
+/*About me title.*/
+.about-me h2 {
+    font-size: 48px;
+}
+
+/*About me subtitle*/
+.about-me h4 {
+    font-size: 34px;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*About me description*/
+.about-me p {
+    font-size: 22px;
+}
+
+/*Form general*/
+input[type=text], input[type=email], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid black; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/*Form section*/
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*Form title*/
+.container h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+/*Form button style.*/
+.contact-form input[type="button"] {
+    height: 32px;
+    width: auto;
+    font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 16px;
+}
+
+/*Form button hover*/
+.contact-form input[type="button"]:hover {
+    color: white;
+    background-color: mediumpurple;
+}
