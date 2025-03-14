@@ -45,6 +45,34 @@ body {
     color: mediumpurple;
 }
 
+/*Responsive Nav Hide Icon*/
+
+#menu-nav .icon {
+    display: none;
+}
+
+/*Responsive Nav stuff*/
+@media screen and (max-width: 600px) {
+    #menu-nav a:not(:first-child) {display: none;}
+    #menu-nav .icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    #menu-nav.responsive {position: relative;}
+    #menu-nav.responsive .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #menu-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
 /*Positions and styles the landing*/
 #landing {
     text-align: center;
