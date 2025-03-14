@@ -3,6 +3,33 @@ body {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: rgb(148, 129, 163);
+}
+
+/*make the buttons the same.*/
+button {
+    height: 44px;
+    width: auto;
+    font-size: 22px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 16px;
+}
+/*Button hovers the same*/
+button:hover {
+    color: white;
+    background-color: mediumpurple;
+}
+
+/*h2 styling for most*/
+h2 {
+    font-size: 48px;
+}
+
+/*p styling for most*/
+p {
+    font-size: 22px;
 }
 
 /*Styling for the title*/
@@ -75,15 +102,40 @@ body {
 
 /*Positions and styles the landing*/
 #landing {
+    position: relative;
     text-align: center;
     vertical-align: middle;
-    height: 550px;
-    font-size: 48px;
+    height: 580px;
     padding-top: 12%;
     background-image: url("../assets/pictures/landingbg.PNG");
     background-repeat: no-repeat;
-    background-position: center 55%;
+    background-position: center 50%;
     background-size: cover;
+}
+
+#landing h2 {
+    font-size: 58px;
+    text-shadow: 3px 3px 1px rgba(148, 129, 163, 0.9);
+    margin-left: 950px;
+    margin-top: 100px;
+}
+
+/*Adds an opacity layer over the background, under the content.*/
+#landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 1;
+}
+
+/*Ensures the content is over the opacity layer.*/
+#landing > * {
+    position: relative;
+    z-index: 2;
 }
 
 /*Positions the writing.*/
@@ -93,43 +145,11 @@ body {
     padding-top: 12%;
 }
 
-/*Styles Book title*/
-.tcoa h2 {
-    font-size: 48px;
-}
-
-/*Styles Book description.*/
-.tcoa p {
-    font-size: 22px;
-}
-
-/*Styles link to the book*/
-.tcoa button {
-    height: 44px;
-    width: auto;
-    font-size: 22px;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    border-radius: 16px;
-}
-
-/*Adds hover to book button*/
-.tcoa button:hover {
-    color: white;
-    background-color: mediumpurple;
-}
-
 /*Positions photography section.*/
 #photography {
     text-align: center;
     vertical-align: middle;
     padding-top: 12%;
-}
-
-/*Styles Photography title.*/
-#photography h2 {
-    font-size: 48px;
 }
 
 /*Positions WebDev Section.*/
@@ -144,38 +164,11 @@ body {
     font-size: 48px;
 }
 
-/*WebDev Description*/
-#web-dev p {
-    font-size: 22px;
-}
-
-/*WebDev Link style*/
-#web-dev button {
-    height: 44px;
-    width: auto;
-    font-size: 22px;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    border-radius: 16px;
-}
-
-/*Button hover effect.*/
-#web-dev button:hover {
-    color: white;
-    background-color: mediumpurple;
-}
-
 /*Position resume section*/
 .resume-pdf {
     text-align: center;
     vertical-align: middle;
     padding-top: 12%;
-}
-
-/*Resume title style*/
-.resume-pdf h2 {
-    font-size: 48px;
 }
 
 /*Size of the Resume to make it fit on the page properly.*/
@@ -191,22 +184,12 @@ body {
     padding-top: 12%;
 }
 
-/*About me title.*/
-.about-me h2 {
-    font-size: 48px;
-}
-
 /*About me subtitle*/
 .about-me h4 {
     font-size: 34px;
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-
-/*About me description*/
-.about-me p {
-    font-size: 22px;
 }
 
 /*Form general*/
