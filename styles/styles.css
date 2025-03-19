@@ -3,7 +3,7 @@ body {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(148, 129, 163);
+    background-color: dimgray;
 }
 
 /*make the buttons the same.*/
@@ -32,6 +32,10 @@ h2 {
 p {
     font-size: 28px;
     text-shadow: 3px 3px 1px rgba(148, 129, 163, 0.9);
+}
+
+#banner {
+    background-color: rgb(148, 129, 163);
 }
 
 /*Styling for the title*/
@@ -71,7 +75,7 @@ p {
 
 /*Adds hover effect to the nav.*/
 #menu-nav a:hover {
-    color: mediumpurple;
+    color: ghostwhite;
 }
 
 /*Responsive Nav Hide Icon*/
@@ -195,6 +199,7 @@ p {
 #photography h2{
     margin-top: -165px;
     color: white;
+    text-decoration: underline;
 }
 
 /*setting the table position*/
@@ -223,6 +228,13 @@ p {
     height: 580px;
 }
 
+.web-container {
+    background-color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 15px;
+}
+
 /*setting the table position*/
 #web-dev table {
     vertical-align: middle;
@@ -235,7 +247,6 @@ p {
 /*Setting the image borders*/
 #web-dev img {
     position: relative;
-    border: 3px solid white;
     border-radius: 15px;
 }
 
@@ -245,11 +256,27 @@ p {
     color: ghostwhite;
 }
 
+/*Full resume section positioning*/
+#resume {
+    margin-top: -560px;
+}
+
+#resume-container {
+    background-color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 15px;
+}
+
 /*Position resume section*/
 .resume-pdf {
     text-align: center;
     vertical-align: middle;
     padding-top: 12%;
+}
+
+#resume h2{
+    color: ghostwhite;
 }
 
 /*Size of the Resume to make it fit on the page properly.*/
@@ -263,6 +290,15 @@ p {
     text-align: center;
     vertical-align: middle;
     padding-top: 12%;
+    margin-top: -202px;
+}
+
+.about-me-container {
+    background-color: black;
+    color: ghostwhite;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /*About me subtitle*/
@@ -271,6 +307,7 @@ p {
     font-family: "PT Sans Caption", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-shadow: 3px 3px 1px rgba(148, 129, 163, 0.9);
 }
 
 /*Form general*/
@@ -287,8 +324,13 @@ input[type=text], input[type=email], textarea {
 
 /*Form section*/
 .container {
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 20px;
+    background-color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: ghostwhite;
+    text-shadow: 3px 3px 1px rgba(148, 129, 163, 0.9);
 }
 
 /*Form title*/
@@ -298,7 +340,7 @@ input[type=text], input[type=email], textarea {
 }
 
 /*Form button style.*/
-.contact-form input[type="button"] {
+.contact-form input[type="submit"] {
     height: 32px;
     width: auto;
     font-size: 18px;
@@ -309,7 +351,97 @@ input[type=text], input[type=email], textarea {
 }
 
 /*Form button hover*/
-.contact-form input[type="button"]:hover {
+.contact-form input[type="submit"]:hover {
     color: white;
     background-color: mediumpurple;
+}
+
+#form-message {
+    text-shadow: none;
+}
+
+/*Writing dropdown setup*/
+.poetry-item {
+    cursor: pointer;
+    display: flex;
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poetry-item:hover {
+    color: ghostwhite;
+}
+
+.dropdown-arrow {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.poem-content {
+    display: none;
+    padding: 10px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+}
+
+.poetry-item.active .dropdown-arrow {
+    transform: rotate(-90deg);
+}
+
+.poetry-item.active + .poem-content {
+    display: block;
+}
+
+.at-arrow-down {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.w-archive {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#poetry {
+    display: inline-block;
+    text-align: left;
+}
+
+#short-stories {
+    display: inline-block;
+    text-align: left;
+}
+
+#essays {
+    display: inline-block;
+    text-align: left;
+    margin-left: 25%;
+}
+
+#lore {
+    display: inline-block;
+    text-align: left;
+    margin-left: 25%;
+}
+
+#novels {
+    display: inline-block;
+    text-align: left;
+    margin-left: 35%;
+}
+
+.novel-list a, .short-stories-list a, .essay-list a, .lore-list a {
+    display: flex;
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.novel-list a:hover, .short-stories-list a:hover, .essay-list a:hover, .lore-list a:hover {
+    color: ghostwhite;
 }

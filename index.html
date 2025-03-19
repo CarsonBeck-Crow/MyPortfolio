@@ -25,7 +25,7 @@
         </div>
         <div id="menu-nav" class="menu-nav">
             <a href="index.html">Home</a>
-            <a href="#writing">Writing</a>
+            <a href="writing.html">Writing</a>
             <a href="#photography">Photography</a>
             <a href="#web-dev">Web Development</a>
             <a href="#resume">Resume</a>
@@ -88,41 +88,47 @@
 
     <!--Here's my webdev stuff.-->
     <section id="web-dev" class="web-dev">
-        <div class="tcc-title" id="tcc-title">
-            <table>
-                <tr>
-                    <td>
-                        <img src="./assets/pictures/tcc.png" alt="Banner image for my website The Common Crow.">
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="tcc" id="tcc">
-            <p>A blog I created and built with the aim to provide a glimpse of the world through the lens of socialism,</p>
-            <p>with the hopes to appeal to untapped demographics.</p>
-            <button id="tcc-button" class="tcc-button">Join the Murder</button>
+        <div class="web-container">
+            <div class="tcc-title" id="tcc-title">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./assets/pictures/tcc.png" alt="Banner image for my website The Common Crow.">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tcc" id="tcc">
+                <p>A blog I created and built with the aim to provide a glimpse of the world through the lens of socialism, with the hopes to appeal to untapped demographics.</p>
+                <button id="tcc-button" class="tcc-button">Join the Murder</button>
+            </div>
         </div>
     </section>
 
     <!--Here's my resume.-->
     <section id="resume" class="resume">
         <div class="resume-pdf" id="resume-pdf">
-            <h2>My Resume</h2>
-            <embed class="pdf" src="./assets/resume/resume.pdf#toolbar=0&#navpanes=0&#scrollbar=0" type="application/pdf">
+            <div class="resume-container" id="resume-container">
+                <h2>My Resume</h2>
+                <embed class="pdf" src="./assets/resume/resume.pdf#toolbar=0&#navpanes=0&#scrollbar=0" type="application/pdf">
+            </div>
         </div>
     </section>
 
     <!--Here's my about section.-->
     <section id="about" class="about">
         <div class="about-me" id="about-me">
-            <h2>"Who am I? You sure you wanna know?"</h2>
-            <h4>-Spider-Man, 2002</h4>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.</p>
+            <div class="about-me-container">
+                <h2>"Who am I? You sure you wanna know?"</h2>
+                <h4>-Spider-Man, 2002</h4>
+                <br>
+                <p>My name is Carson Beck, I decided when I was eleven years old that I wanted to be a writer. Since
+                then, I've worked to hone that creative writing skill in a myriad of ways, publishing poems, writing
+                short stories, and writing lore for my own unique Dungeons and Dragons settings for my friends to
+                explore in our games. Now I'm working on my first novel, and I'm excited to release it later this year!
+                Alongside that I've been learning Web Design and Development, I've used this website as a means of
+                showcasing my skills and acting as my real portfolio for my different avenues of skills and projects.</p>
+            </div>
         </div>
     </section>
 </main>
@@ -132,7 +138,9 @@
     <section id="contact">
         <div class="container" id="container">
             <h2>Contact Me</h2>
-            <form id="contact-form" class="contact-form" action="">
+            <form id="contact-form" class="contact-form" action="/submit-form" method="post">
+
+                <div id="form-message"></div>
 
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
@@ -146,7 +154,7 @@
                 <label for="message">Subject</label>
                 <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
-                <input type="button" id="submit" value="Submit" onclick="submitForm()">
+                <input type="submit" id="submit" value="Submit">
 
             </form>
         </div>
@@ -154,6 +162,7 @@
 </footer>
 
 <!--Scripts go here.-->
-<script type="module" src="main.js"></script>
+<script type="module" src="scripts/main.js"></script>
+
 </body>
 </html>
