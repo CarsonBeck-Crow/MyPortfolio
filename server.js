@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 import {fileURLToPath} from "url";
 import mysql from "mysql2";
+import "dotenv/config"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,8 +12,8 @@ const PORT = 3000;
 
 const connection = mysql.createConnection({
     host: "localhost",
-    user: "root",
-    password: "",
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASS,
     database: "contactFormDB",
 });
 
