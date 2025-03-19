@@ -12,7 +12,7 @@ const PORT = 3000;
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Joestar090799+",
+    password: "",
     database: "contactFormDB",
 });
 
