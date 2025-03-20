@@ -34,6 +34,9 @@ function loadPoems() {
     const sortedPoems = poems.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     sortedPoems.forEach((poem) => {
+
+        const formattedContent = poem.content.replace(/\n/g, "<br>");
+
         let poemElement = `
         <div class="poetry-list">
             <ul>
@@ -42,7 +45,7 @@ function loadPoems() {
                             <span class="poem-title">${poem.title}</span>
                             <span class="dropdown-arrow"><i class="at-arrow-down"></i></span>
                     </div>
-                    <div class="poem-content">${poem.content || "Content not available."}</div>
+                    <div class="poem-content">${formattedContent || "Content not available."}</div>
                 </li>
             </ul>
         </div>
@@ -72,7 +75,7 @@ function loadShorts() {
         let shortElement = `
         <div class="short-stories-list">
             <ul>
-                <li><a href="${short.title}">${short.title}</a></li>
+                <li><a href="${short.title}"><a href="${short.url}">${short.title}</a></a></li>
             </ul>
         </div>
         `;
@@ -100,7 +103,7 @@ function loadEssays() {
         let essayElement = `
         <div class="essay-list">
             <ul>
-                <li><a href="${essay.title}">${essay.title}</a></li>
+                <li><a href="${essay.title}"><a href="${essay.url}">${essay.title}</a></a></li>
             </ul>
         </div>
         `;
@@ -128,7 +131,9 @@ function loadLore() {
         let lortElement = `
         <div class="lore-list">
             <ul>
-                <li><a href="${lort.title}">${lort.title}</a></li>
+                <li><a href="${lort.title}"><a href="${lort.url}">${lort.title}</a></a>
+                    <div class="lore-description">${lort.description}</div>
+                </li>
             </ul>
         </div>
         `;
@@ -156,7 +161,9 @@ function loadNovels() {
         let novelElement = `
         <div class="novel-list">
             <ul>
-                <li><a href="${novel.title}">${novel.title}</a></li>
+                <li><a href="${novel.title}"><a href="${novel.url}">${novel.title}</a></a>
+                    <div class="novel-description" style="word-wrap: normal;">${novel.description}</div>
+                </li>
             </ul>
         </div>
         `;

@@ -3,6 +3,7 @@ import path from "path";
 import {fileURLToPath} from "url";
 import mysql from "mysql2";
 import "dotenv/config"
+import nodemailer from "nodemailer";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,6 +25,14 @@ connection.connect((err) => {
     }
     console.log("Connected to MySQL");
 });
+
+const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+    }
+})
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -47,9 +56,30 @@ app.post("/submit-form", (req, res) => {
         }
 
         console.log("Form data successfully inserted into MySQL: ", results);
-        res.json({
-            message: "Form submitted successfully",
-            data: {firstname, lastname, email, message},
+
+        const mailOptions = {
+            from: process.env.EMAIL_USER,
+            to: process.env.EMAIL_SEND,
+            subject: "New Contact Form Submission",
+            text: `
+            First Name: ${firstname},
+            Last Name: ${lastname},
+            Email: ${email},
+            Message: ${message}
+            `,
+        };
+
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.error("Error sending email: ", error);
+                res.status(500).json({message: "Form submitted, but email failed."});
+            } else {
+                console.log("Email sent: " + info.response);
+                res.json({
+                    message: "Form submitted successfully.",
+                    data: {firstname, lastname, email, message},
+                });
+            }
         });
     });
 });

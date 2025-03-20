@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Cost of Adventure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the portfolio of Carson Beck.">
+    <meta name="author" content="Carson Beck">
+    <meta name="keywords" content="Carson, Carson Beck, Portfolio, Writer, Novelist, Aspiring Web Developer, Portfolio Example, Portfolio Examples">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@vectopus/atlas-icons/style.css">
+
+</head>
+<body>
+
+<!--Here's the top of the page, heading, and nav bar.-->
+<section id="banner" class="banner">
+    <header>
+        <div class="page-title">
+            <h1>Carson Beck</h1>
+            <h1>Writer. Socialist. Forever DM.</h1>
+        </div>
+        <div id="menu-nav" class="menu-nav">
+            <a href="../index.html">Home</a>
+            <a href="../writing.html">Writing</a>
+            <a href="../index.html/#photography">Photography</a>
+            <a href="../index.html/#web-dev">Web Development</a>
+            <a href="../index.html/#resume">Resume</a>
+            <a href="../index.html/#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <i class="at-menu-square"></i>
+            </a>
+        </div>
+    </header>
+</section>
+<main>
+    <article>
+        <section id="story-title" class="story-title">
+            <h2>The Cost of Adventure</h2>
+            <h3>By Carson Beck</h3>
+        </section>
+
+        <section id="novel-summary" class="novel-summary">
+            <p>
+                In the fractured realm of Losthia, where the ruins of 1980’s Earth collided with the magical world of
+                the Lost Lands, the Age of Adventure has faded into legend. Monsters no longer roam the wilds, and heroes
+                have traded their swords for mundane lives. But beneath the surface, shadows stir, and the fragile peace
+                of this strange world is about to shatter.
+            </p>
+            <p>
+                Tarek Qalzir is a customer service agent for the Sin Corporation, a sprawling, omnipresent megacorp that
+                dominates every corner of Losthia. Though his job pays the bills, Tarek dreams of becoming an adventurer.
+                But when a chance encounter with Princess Helesta thrusts him into a deadly battle with a Skeletal Lord,
+                Tarek’s life takes a dramatic turn. Alongside a ragtag group of companions—Korrin, a brash and unconventional
+                wizard; Alfred, a gentle healer grappling with his past; and Damien, a socially anxious but fiercely loyal
+                protector—Tarek is drawn into a quest that will challenge everything he believes about heroism.
+            </p>
+            <p>
+                As Tarek and his companions navigate a world of shifting loyalties and hidden dangers, they must confront
+                their own fears, ambitions, and the cost of their choices. The true meaning of heroism will be tested—and
+                the cost of adventure may be higher than any of them imagined.
+            </p>
+        </section>
+
+        <div id="art-title" class="art-title">
+            <h2>Concept art for The Cost of Adventure:</h2>
+        </div>
+
+        <section id="concept-art" class="concept-art">
+            <div class="tcoa-art">
+                <div class="mySlides">
+                    <div class="slideNumbers">1/8</div>
+                    <img src="../assets/tcoa-concept-art/Scene_concept.jpeg" alt="A man and woman dressed in modern
+                     fantasy clothing, stand in front of a skeletal figure that's flying behind them">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideNumbers">2/8</div>
+                    <img src="../assets/tcoa-concept-art/Tarek.jpeg" alt="A portrait of a man with dark curly hair wearing
+                     dark clothing">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideNumbers">3/8</div>
+                    <img src="../assets/tcoa-concept-art/Korrin.jpeg" alt="A portrait of a Smiling Orc with shaggy black
+                     hair, wearing robes and a backpack">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideNumbers">4/8</div>
+                    <img src="../assets/tcoa-concept-art/Alfred.jpeg" alt="A portrait of a serious looking strong Elven
+                     man with round glasses, wearing scholarly clothes">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideNumbers">5/8</div>
+                    <img src="../assets/tcoa-concept-art/Damien.jpeg" alt="A portrait of a sad looking pale man with long
+                     greasy black hair, wearing nice clothes, from two angles">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideNumbers">6/8</div>
+                    <img src="../assets/tcoa-concept-art/Kingdom_1.jpeg" alt="An image of a colorful Kingdom with magical
+                     fantasy elements and modern elements combined together">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideNumbers">7/8</div>
+                    <img src="../assets/tcoa-concept-art/Kingdom_2.jpeg" alt="An image of a very modern, almost futuristic,
+                     city created from modern styles using magical means to make it grander">
+                </div>
+
+                <div class="mySlides">
+                    <div class="slideNumbers">8/8</div>
+                    <img src="../assets/tcoa-concept-art/Kingdom_3.jpeg" alt="An image of a dark looking city, made of massive
+                     stone buildings that have an emerald green hue to them">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><i class="at-arrow-left"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="at-arrow-right"></i></a>
+
+                <div class="caption-container">
+                    <p id="slideCaption"></p>
+                </div>
+
+                <div class="slideRow">
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Scene_concept.jpeg" alt="A concept scene"
+                             style="width: 100%;" onclick="currentSlide(1)">
+                    </div>
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Tarek.jpeg" alt="Tarek concept art"
+                             style="width: 100%;" onclick="currentSlide(2)">
+                    </div>
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Korrin.jpeg" alt="Korin concept art"
+                             style="width: 100%;" onclick="currentSlide(3)">
+                    </div>
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Alfred.jpeg" alt="Alfred concept art"
+                             style="width: 100%;" onclick="currentSlide(4)">
+                    </div>
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Damien.jpeg" alt="Damien concept art"
+                             style="width: 100%;" onclick="currentSlide(5)">
+                    </div>
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Kingdom_1.jpeg" alt="Concept art of a
+                        Kingdom/city" style="width: 100%;" onclick="currentSlide(6)">
+                    </div>
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Kingdom_2.jpeg" alt="Concept art of a
+                         second Kingdom/city" style="width: 100%;" onclick="currentSlide(7)">
+                    </div>
+                    <div class="slideColumn">
+                        <img class="demo cursor" src="../assets/tcoa-concept-art/Kingdom_3.jpeg" alt="Concept art of a
+                         city" style="width: 100%;" onclick="currentSlide(8)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="concept-art-disclaimer">
+                <h3>*All of the art above was generated through AI as concept art for my personal use in maintaining a cohesive
+                    aesthetic for the story.*</h3>
+                <h3>*The art will be replaced with professionally made art further into production.*</h3>
+            </div>
+        </section>
+
+        <section id="buy-story">
+            <h3>Interested in reading this story as soon as it releases?</h3>
+            <h4>Keep an eye out for pre-orders!</h4>
+        </section>
+
+        <section id="thank-you">
+            <h2>Thanks for reading!</h2>
+            <h3>Check out more of my writing <a href="../writing.html">here!</a></h3>
+        </section>
+    </article>
+</main>
+
+<!--Footer contains the contact form.-->
+<footer>
+    <section id="contact">
+        <div class="container" id="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form" action="/submit-form" method="post">
+
+                <div id="form-message"></div>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email.." required>
+
+                <label for="message">Subject</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" id="submit" value="Submit">
+
+            </form>
+        </div>
+    </section>
+</footer>
+
+<!--Scripts go here.-->
+<script type="module" src="../scripts/main.js"></script>
+<script type="module" src="../scripts/slidefunction.js"></script>
+
+</body>
+</html>

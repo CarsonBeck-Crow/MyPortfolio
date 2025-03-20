@@ -360,7 +360,39 @@ input[type=text], input[type=email], textarea {
     text-shadow: none;
 }
 
-/*Writing dropdown setup*/
+
+
+/*Writing archive*/
+
+.w-archive {
+    text-align: center;
+}
+
+.topRow, .bottomRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+
+.bottomRow {
+    margin-bottom: 75px;
+}
+
+#poetry, #novels {
+    flex: 1;
+    margin: 0 85px;
+}
+
+#poetry, #novels, #short-stories, #essays, #lore {
+    max-width: 30%;
+}
+
+.poetry-container, .novels-container, .short-stories-container, .essays-container, .lore-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .poetry-item {
     cursor: pointer;
     display: flex;
@@ -383,7 +415,7 @@ input[type=text], input[type=email], textarea {
     display: none;
     padding: 10px;
     font-family: "PT Sans", sans-serif;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .poetry-item.active .dropdown-arrow {
@@ -394,42 +426,13 @@ input[type=text], input[type=email], textarea {
     display: block;
 }
 
+.poetry-item .poem-title {
+    text-decoration: underline;
+}
+
 .at-arrow-down {
     padding-left: 10px;
     font-size: 16px;
-}
-
-.w-archive {
-    text-align: center;
-    vertical-align: middle;
-}
-
-#poetry {
-    display: inline-block;
-    text-align: left;
-}
-
-#short-stories {
-    display: inline-block;
-    text-align: left;
-}
-
-#essays {
-    display: inline-block;
-    text-align: left;
-    margin-left: 25%;
-}
-
-#lore {
-    display: inline-block;
-    text-align: left;
-    margin-left: 25%;
-}
-
-#novels {
-    display: inline-block;
-    text-align: left;
-    margin-left: 35%;
 }
 
 .novel-list a, .short-stories-list a, .essay-list a, .lore-list a {
@@ -438,10 +441,264 @@ input[type=text], input[type=email], textarea {
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
+    text-decoration: underline;
+    color: black;
+}
+
+.lore-description, .novel-description {
+    display: flex;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
     text-decoration: none;
     color: black;
 }
 
 .novel-list a:hover, .short-stories-list a:hover, .essay-list a:hover, .lore-list a:hover {
     color: ghostwhite;
+}
+
+/*Short Story formatting*/
+
+.story-title {
+    text-align: center;
+}
+
+.story-title h2 {
+    text-decoration: underline;
+}
+
+.story-title h4 a {
+    color: rebeccapurple;
+}
+
+.story-title h4 a:hover {
+    color: ghostwhite;
+}
+
+.story-content {
+    background-color: ghostwhite;
+    border-radius: 3px;
+    margin-left: 14.5%;
+    margin-right: 13.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.story-content p {
+    text-align: left;
+    text-shadow: none;
+    text-indent: 50px;
+    display: flex;
+    justify-content: left;
+    padding: 5px 20px 5px 20px;
+}
+
+#buy-story {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5%;
+}
+
+#buy-story h4 a{
+    color: rebeccapurple;
+}
+
+#buy-story h4 a:hover {
+    color: ghostwhite;
+}
+
+#thank-you {
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 5%;
+}
+
+#thank-you h3 a {
+    color: rebeccapurple;
+}
+
+#thank-you h3 a:hover {
+    color: ghostwhite;
+}
+
+.essay-content {
+    background-color: ghostwhite;
+    border-radius: 3px;
+    margin-left: 14.5%;
+    margin-right: 13.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.essay-content p {
+    text-align: left;
+    text-shadow: none;
+    display: flex;
+    justify-content: left;
+    padding: 5px 20px 5px 20px;
+}
+
+.essay-content ul{
+    list-style-type: lower-alpha;
+    font-size: 28px;
+    padding-left: 95px;
+}
+
+.art-img figure {
+    display: inline-block;
+}
+
+.art-img img {
+    width: auto;
+    height: 420px;
+}
+
+.blank-tag {
+    text-align: right;
+}
+
+.story-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pointing-meme {
+    width: auto;
+    height: 350px;
+}
+
+.novel-summary {
+    background-color: ghostwhite;
+    border-radius: 3px;
+    margin-left: 14.5%;
+    margin-right: 13.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.novel-summary p {
+    text-align: left;
+    text-shadow: none;
+    text-indent: 50px;
+    display: flex;
+    justify-content: left;
+    padding: 5px 20px 5px 20px;
+}
+
+.art-title h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.tcoa-art * {
+    box-sizing: border-box;
+}
+
+.tcoa-art {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideNumbers {
+    color: black;
+    font-size: 35px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: ghostwhite;
+}
+
+#slideCaption {
+    text-shadow: none;
+}
+
+.slideRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slideRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 10px;
+}
+
+.slideColumn {
+    flex: 1 1 calc(12.5% - 5px); /* Ensure 8 thumbnails fit in one row */
+    max-width: calc(12.5% - 5px); /* Limit width to fit 8 thumbnails */
+    box-sizing: border-box;
+}
+
+.demo {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.active {
+    opacity: 1;
+}
+
+.concept-art-disclaimer {
+    text-align: center;
+    margin-bottom: -50px;
 }
