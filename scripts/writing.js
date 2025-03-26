@@ -246,17 +246,17 @@ export let shorts = [
     {
         title: "All in a Matter of Seconds",
         date: "2025-01-23",
-        url: "../MyPortfolio/writings/all-in-a-matter-of-seconds.html",
+        url: "../writings/all-in-a-matter-of-seconds.html",
     },
     {
         title: "The Creation Story of Storallia",
         date: "2030-10-10",
-        url: "../MyPortfolio/writings/creation-story.html",
+        url: "../writings/creation-story.html",
     },
     {
         title: "Humanity of Storallia",
         date: "2021-04-06",
-        url: "../MyPortfolio/writings/storallia-humanity.html",
+        url: "../writings/storallia-humanity.html",
     },
 ]
 
@@ -264,17 +264,17 @@ export let essays = [
     {
         title: "What's the Deal with Stuart Little?: Video Essay Script",
         date: "2024-08-21",
-        url: "../MyPortfolio/writings/stuart-little.html",
+        url: "../writings/stuart-little.html",
     },
     {
         title: "Beyond Fertility Goddesses: Reexamining the Roles of Women in Prehistoric and Pre-Modern Art",
         date: "2019-11-04",
-        url: "../MyPortfolio/writings/art-hist-essay.html",
+        url: "../writings/art-hist-essay.html",
     },
     {
         title: "Crying Cyber Tears",
         date: "2021-06-29",
-        url: "../MyPortfolio/writings/cyber-tears.html",
+        url: "../writings/cyber-tears.html",
     },
 ]
 
@@ -298,7 +298,7 @@ export let novels = [
     {
         title: "The Cost of Adventure",
         date: "2025-10-31",
-        url: "../MyPortfolio/writings/cost-of-adventure.html",
+        url: "../writings/cost-of-adventure.html",
         description: "In the fractured realm of Losthia, where the ruins of 1980’s Earth collided with the magical world" +
             " of the Lost Lands, the Age of Adventure has faded into legend. Monsters no longer roam the wilds, and heroes" +
             " have traded their swords for mundane lives. But beneath the surface, shadows stir, and the fragile peace of" +

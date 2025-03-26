@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carson's Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the portfolio of Carson Beck.">
+    <meta name="author" content="Carson Beck">
+    <meta name="keywords" content="Carson, Carson Beck, Portfolio, Writer, Novelist, Aspiring Web Developer, Portfolio Example, Portfolio Examples">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@vectopus/atlas-icons/style.css">
+
+</head>
+<body>
+
+<!--Here's the top of the page, heading, and nav bar.-->
+<section id="banner" class="banner">
+    <header>
+        <div class="page-title">
+            <h1>Carson Beck</h1>
+            <h1>Writer. Socialist. Forever DM.</h1>
+        </div>
+        <div id="menu-nav" class="menu-nav">
+            <a href="index.html">Home</a>
+            <a href="writing.html">Writing</a>
+            <a href="index.html#photography">Photography</a>
+            <a href="index.html#web-dev">Web Development</a>
+            <a href="index.html#resume">Resume</a>
+            <a href="index.html#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                <i class="at-menu-square"></i>
+            </a>
+        </div>
+    </header>
+</section>
+
+<main>
+
+    <section id="photo-heading" class="photo-heading">
+        <h1>My Photography</h1>
+    </section>
+
+
+</main>
+
+<!--Footer contains the contact form.-->
+<footer>
+    <section id="contact">
+        <div class="container" id="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form" action="/submit-form" method="post">
+
+                <div id="form-message"></div>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email.." required>
+
+                <label for="message">Subject</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" id="submit" value="Submit">
+
+            </form>
+        </div>
+    </section>
+</footer>
+
+<!--Scripts go here.-->
+<script type="module" src="./scripts/main.js"></script>
+
+</body>
+</html>
